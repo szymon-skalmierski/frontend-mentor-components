@@ -167,8 +167,9 @@ body{
 
 @media only screen and (max-width: 1280px) {
     .container{
-        height: 220vh;
-        min-height: 1800px;
+        height: 140vh;
+        min-height: 1500px;
+        max-height: 1700px;
     }
     .box{
         flex-direction: column;
