@@ -21,7 +21,7 @@ body {
 
 .container {
     width: clamp(400px, 40vw, 600px);
-    height: 70vh;
+    height: clamp(700px, 70vh, 1100px);
     display: grid;
     grid-template-rows: 18% 1fr;
     grid-template-columns: 100%;
@@ -87,6 +87,7 @@ body {
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: 100%;
     box-sizing: border-box;
+    justify-items: center;
 }
 
 .chart-top-bars > div {
@@ -95,8 +96,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     gap: 5px;
-    max-width: 65px;
-    
+    width: 90%;
 }
 
 .chart-top-bars > div > .bar {
@@ -123,7 +123,7 @@ body {
     visibility: hidden;
     aspect-ratio: 2/1;
     background-color: black;
-    font-size: 14px;
+    font-size: 19px;
     color: hsl(33, 100%, 98%);
     user-select: none;
     z-index: 1;
@@ -172,11 +172,42 @@ body {
     font-size: 1.1rem;
 }
 
-
-
 hr {
     height: 2px;
     width: 100%;
     background-color: hsl(27, 66%, 92%);
     border: 0;
+}
+
+
+@media screen and (max-width: 600px){
+    html {
+        font-size: 0.85rem;
+    }
+    
+    .container {
+        width: clamp(330px, 90vw, 550px);
+        height: clamp(500px, 80vh, 650px);
+    }
+
+    .chart-top-bars > div > .amount {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px){
+    html {
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        width: clamp(500px, 80vw, 600px);
+        height: clamp(700px, 70vh, 800px);
+    }
+
+    .chart-top-bars > div > .amount {
+        padding: 8px;
+        font-size: 22px;
+    }
 }
