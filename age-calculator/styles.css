@@ -4,6 +4,13 @@
 	src: url('assets/fonts/Poppins-Regular.ttf');
 }
 
+@font-face {
+	font-family: poppins;
+	font-weight: 800;
+	font-style: italic;
+	src: url('assets/fonts/Poppins-BoldItalic.ttf');
+}
+
 html {
 	font-family: poppins;
 	font-weight: 600;
@@ -26,7 +33,7 @@ body {
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 20px 20px 180px 20px;
 	display: grid;
-	grid-template-rows: 25% 5% 70%;
+	grid-template-rows: 20% 15% 65%;
 	padding: 60px;
 	box-sizing: border-box;
 }
@@ -50,7 +57,7 @@ body {
 
 .date-picker input {
 	border: 1px solid hsl(0, 0%, 86%);
-	height: 50%;
+	height: 80%;
 	width: 100%;
 	font-size: 2.4rem;
 	padding-left: 20px;
@@ -86,8 +93,24 @@ body {
 	aspect-ratio: 1/1;
 }
 
+.result {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 6.5rem;
+	font-style: italic;
+	font-weight: 800;
+}
+
+.result div {
+	line-height: 1.1;
+}
+
+.result .number {
+	color: hsl(259, 100%, 65%);
+}
+
 .attribution {
-	margin: 15;
 	font-size: 11px;
 	text-align: center;
 }
