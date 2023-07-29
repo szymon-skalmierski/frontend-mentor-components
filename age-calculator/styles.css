@@ -14,6 +14,12 @@
 @font-face {
 	font-family: poppins;
 	font-weight: 800;
+	src: url('assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: poppins;
+	font-weight: 800;
 	font-style: italic;
 	src: url('assets/fonts/Poppins-BoldItalic.ttf');
 }
@@ -57,7 +63,8 @@ body {
 	gap: 5px;
 }
 
-.date-picker span:nth-child(1) {
+.date-picker div :nth-child(1) {
+	font-weight: 800;
 	color: hsl(0, 1%, 44%);
 	letter-spacing: 4px;
 }
@@ -89,6 +96,10 @@ input ~ span {
 
 :is(.invalid, .future-year) ~ .invalid-alert, .required ~ .required-alert {
 	display: inline;
+}
+
+.date-picker span:has(+.invalid, +.required, +.future-year) {
+	color: red;
 }
 
 .date-picker input::placeholder {

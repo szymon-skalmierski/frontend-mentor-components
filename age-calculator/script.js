@@ -5,6 +5,7 @@ const birthYear = document.querySelector('input[name="year"]');
 const dayValue = document.querySelector(".days .number");
 const monthValue = document.querySelector(".months .number");
 const yearValue = document.querySelector(".years .number");
+const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 button.addEventListener("click", () => {
     let validDay = true;
@@ -57,12 +58,12 @@ button.addEventListener("click", () => {
 	}
 
     if(validDay && validMonth && validYear) {
-        let days = Number(date[0]) - Number(birthdate[0]);
-        let months = Number(date[1]) - Number(birthdate[1]);
-        let years = Number(date[2]) - Number(birthdate[2]);
+        let days = date[0] - birthdate[0];
+        let months = date[1] - birthdate[1];
+        let years = date[2] - birthdate[2];
         if (days < 0) {
             months -= 1;
-            days += 30;
+            days += daysInMonths[months-1<0 ? months+11 : months-1];
         }
         if (months < 0) {
             years -= 1;
