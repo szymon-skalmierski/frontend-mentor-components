@@ -7,6 +7,17 @@ const monthValue = document.querySelector(".months .number");
 const yearValue = document.querySelector(".years .number");
 const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
+function isLeapYear(year) {
+    if(year%4===0) {
+        if(year%100===0) {
+            if(year%400===0) return true;
+            return false;
+        }
+        return true;
+    }
+    return false;
+}
+
 button.addEventListener("click", () => {
     let validDay = true;
     let validMonth = true;
