@@ -32,7 +32,7 @@ button.addEventListener("click", () => {
 	if (!birthDay.value) {
         birthDay.classList.add('required');
         validDay=false;
-	} else if (Number(birthDay.value) < 1 || Number(birthDay.value) > 31) {
+	} else if ((+birthDay.value < 1 || +birthDay.value > daysInMonths[+birthMonth.value-1]) && !(isLeapYear(+birthYear.value) && Number(birthMonth.value)===2 && birthDay.value==='29')) {
         birthDay.classList.add("invalid");
         birthDay.classList.remove('required');
         validDay=false;
@@ -45,7 +45,7 @@ button.addEventListener("click", () => {
 	if (!birthMonth.value) {
         birthMonth.classList.add('required');
         validMonth=false;
-	} else if (Number(birthMonth.value) < 1 || Number(birthMonth.value) > 12) {
+	} else if (+birthMonth.value < 1 || +birthMonth.value > 12) {
         birthMonth.classList.add("invalid");
         birthMonth.classList.remove('required');
         validMonth=false;
