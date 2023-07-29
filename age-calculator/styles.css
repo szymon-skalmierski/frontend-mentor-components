@@ -1,6 +1,13 @@
 @font-face {
 	font-family: poppins;
 	font-weight: 400;
+	font-style: italic;
+	src: url('assets/fonts/Poppins-Italic.ttf');
+}
+
+@font-face {
+	font-family: poppins;
+	font-weight: 700;
 	src: url('assets/fonts/Poppins-Regular.ttf');
 }
 
@@ -13,7 +20,7 @@
 
 html {
 	font-family: poppins;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 body {
@@ -45,19 +52,19 @@ body {
 }
 
 .date-picker div {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: 20% 60% 20%;
+	gap: 5px;
 }
 
-.date-picker span {
+.date-picker span:nth-child(1) {
 	color: hsl(0, 1%, 44%);
-	margin-bottom: 10px;
 	letter-spacing: 4px;
 }
 
-.date-picker input {
+input {
 	border: 1px solid hsl(0, 0%, 86%);
-	height: 80%;
+	height: 100%;
 	width: 100%;
 	font-size: 2.4rem;
 	padding-left: 20px;
@@ -66,6 +73,22 @@ body {
 	color: hsl(0, 0%, 8%);
 	font-weight: 800;
 	border-radius: 5px;
+}
+
+input ~ span {
+	font-size: 1rem;
+	display: none;
+	font-style: italic;
+	font-weight: 400;
+	color: hsl(0, 100%, 67%);
+}
+
+.invalid, .future-year, .required {
+	border: 1px solid hsl(0, 100%, 67%);
+}
+
+:is(.invalid, .future-year) ~ .invalid-alert, .required ~ .required-alert {
+	display: inline;
 }
 
 .date-picker input::placeholder {
