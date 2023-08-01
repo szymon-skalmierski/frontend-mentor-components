@@ -94,12 +94,20 @@ input ~ span {
 	border: 1px solid hsl(0, 100%, 67%);
 }
 
-:is(.invalid, .future-year) ~ .invalid-alert, .required ~ .required-alert {
+:is(.invalid, .future-year) ~ .invalid-alert, .invalid-date ~ .invalid-date-alert, .required ~ .required-alert {
 	display: inline;
 }
 
 .date-picker span:has(+.invalid, +.required, +.future-year) {
 	color: red;
+}
+
+.date-picker .invalid-date span {
+	color: red;
+}
+
+.date-picker .invalid-date input {
+	border-color: red;
 }
 
 .date-picker input::placeholder {
@@ -125,6 +133,11 @@ input ~ span {
 	border-radius: 50%;
 	background-color: hsl(259, 100%, 65%);
 	aspect-ratio: 1/1;
+	transition: 0.1s;
+}
+
+.button-wrap button:hover {
+	background-color: hsl(0, 0%, 8%);
 }
 
 .result {

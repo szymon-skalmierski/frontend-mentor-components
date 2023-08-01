@@ -5,6 +5,7 @@ const birthYear = document.querySelector('input[name="year"]');
 const dayValue = document.querySelector(".days .number");
 const monthValue = document.querySelector(".months .number");
 const yearValue = document.querySelector(".years .number");
+const wholeDate = document.querySelectorAll('.date-picker *')
 const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 function isLeapYear(year) {
@@ -33,12 +34,17 @@ button.addEventListener("click", () => {
         birthDay.classList.add('required');
         validDay=false;
 	} else if ((+birthDay.value < 1 || +birthDay.value > daysInMonths[+birthMonth.value-1]) && !(isLeapYear(+birthYear.value) && Number(birthMonth.value)===2 && birthDay.value==='29')) {
-        birthDay.classList.add("invalid");
+        wholeDate.forEach(element=>{
+            console.log(element)
+            element.classList.add("invalid-date");
+        });
         birthDay.classList.remove('required');
         validDay=false;
 	} else {
+		wholeDate.forEach(element=>{
+            element.classList.remove("invalid-date");
+        });
         birthDay.classList.remove('required');
-		birthDay.classList.remove("invalid");
         validDay=true;
 	}
     
