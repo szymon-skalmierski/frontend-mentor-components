@@ -60,6 +60,7 @@ body {
 .date-picker div {
 	display: grid;
 	grid-template-rows: 20% 60% 20%;
+	align-items: center;
 	gap: 5px;
 }
 
@@ -67,15 +68,16 @@ body {
 	font-weight: 800;
 	color: hsl(0, 1%, 44%);
 	letter-spacing: 4px;
+	margin: 0;
 }
 
 input {
 	border: 1px solid hsl(0, 0%, 86%);
-	height: 100%;
 	width: 100%;
+	aspect-ratio: 5/2;
 	font-size: 2.4rem;
-	padding-left: 20px;
-	letter-spacing: 2px;
+	padding-left: 1rem;
+	letter-spacing: 0.2rem;
 	box-sizing: border-box;
 	color: hsl(0, 0%, 8%);
 	font-weight: 800;
@@ -89,6 +91,7 @@ input::-webkit-inner-spin-button {
 }
 
 input ~ span {
+	align-self: start;
 	font-size: 1rem;
 	display: none;
 	font-style: italic;
@@ -123,6 +126,7 @@ input ~ span {
 .button-wrap {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .button-wrap hr {
@@ -134,7 +138,7 @@ input ~ span {
 
 .button-wrap button {
 	cursor: pointer;
-	width: 100px;
+	width: 8rem;
 	border: 0;
 	border-radius: 50%;
 	background-color: hsl(259, 100%, 65%);
@@ -170,4 +174,50 @@ input ~ span {
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 700px){
+	html {
+		font-size: 0.8rem;
+	}
+
+	.container {
+		width: 90%;
+		aspect-ratio: 6/8;
+		padding: 40px;
+		min-width: 370px;
+		border-radius: 30px 30px 110px 30px;
+		grid-template-rows: 30% 20% 50%;
+	}
+	
+	.date-picker {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	}
+	
+	.date-picker input {
+		aspect-ratio: 4/2;
+		max-height: 65px;
+		min-height: 48px;
+	}
+
+	.date-picker div {
+		height: 80%;
+		align-self: center;
+		align-items: center;
+	}
+
+	.button-wrap button {
+		width: 7rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+	}
+	
+	.result {
+		font-size: 4.7rem;
+	}
 }
