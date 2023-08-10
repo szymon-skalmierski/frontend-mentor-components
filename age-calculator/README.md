@@ -2,6 +2,10 @@
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
+## Live Preview
+
+[Age Calculator Live Preview](https://www.age-calc-fem.vercel.app)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
