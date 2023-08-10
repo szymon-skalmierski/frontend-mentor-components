@@ -4,7 +4,7 @@
 
 ## Live Preview
 
-[Age Calculator Live Preview](https://www.age-calc-fem.vercel.app)
+[Age Calculator Live Preview](https://age-calc-fem.vercel.app)
 
 ## Welcome! 👋
 
