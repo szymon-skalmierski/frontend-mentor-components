@@ -2,6 +2,10 @@
 
 ![Design preview for the Pricing component with toggle coding challenge](./design/desktop-preview.jpg)
 
+## Live Preview
+
+[Pricing Component Live Preview](https://pricing-ss.vercel.app)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
