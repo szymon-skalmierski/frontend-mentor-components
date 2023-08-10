@@ -5,49 +5,57 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: aliceblue;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.bg-top{
+
+.bg-top {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
 }
-.bg-bottom{
+
+.bg-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: -1;
 }
-.container{
+
+.container {
     position: relative;
     text-align: center;
     height: 100vh;
     min-height: 900px;
     width: 100vw;
 }
-.header{
+
+.header {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     color: hsl(233, 13%, 49%);
     padding: 70px 0 40px;
     font-weight: bolder;
 }
-.price-switch-box{
+
+.price-switch-box {
     user-select: none;
     padding: 20px 0 40px;
 }
-.price-switch-box > span{
+
+.price-switch-box > span {
     color: hsl(234, 14%, 74%);
     font-size: 1.2rem;
     margin: 0 5px;
 }
-.price-switch{
+
+.price-switch {
     display: inline-block;
     width: 66px;
     height: 36px;
@@ -56,7 +64,8 @@ body{
     border-radius: 24px;
     vertical-align: middle;
 }
-.switch-position{
+
+.switch-position {
     width: 30px;
     height: 30px;
     border-radius: 30px;
@@ -65,22 +74,25 @@ body{
     transform: translateY(-50%);
     top: 50%;
 }
-.switch-annually{
+
+.switch-annually {
     left: 3px;
 }
-.switch-monthly{
+
+.switch-monthly {
     right: 3px;
 }
-.box{
+
+.box {
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     width: 80vw;
     height: 53%;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
 .component {
     width: 24%;
     min-width: 320px;
@@ -98,6 +110,7 @@ body{
     color: hsl(232, 13%, 33%);
     box-shadow: 0 10px 25px rgb(235, 235, 235);
 }
+
 .component:nth-of-type(2) {
     padding: 45px 25px 25px;
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -106,20 +119,24 @@ body{
     width: 24%;
     z-index: 1;
 }
-.component *{
+
+.component * {
     margin: 14px 0;
 }
-.component hr{
+
+.component hr {
     height: 1px;
     border-width: 0;
     color: hsl(228, 14%, 93%);
     background-color: hsl(228, 14%, 93%);
 }
-.component:nth-of-type(2) hr{
+
+.component:nth-of-type(2) hr {
     color: hsl(236, 72%, 79%);
     background-color: hsl(236, 72%, 79%);
 }
-.component > button{
+
+.component > button {
     cursor: pointer;
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     width: 90%;
@@ -134,26 +151,31 @@ body{
     border-radius: 8px;
     transition: 0.3s;
 }
-.component:nth-of-type(2) > button{
+
+.component:nth-of-type(2) > button {
     background-image: none;
     background-color: white;
     color: hsl(237, 63%, 64%);
 }
-.component > button:hover{
+
+.component > button:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
-.price-holder{
+
+.price-holder {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     font-size: 4em;
 }
-.price-holder > span:first-of-type{
+
+.price-holder > span:first-of-type {
     font-size: 2rem;
     padding: 10px;
 }
+
 .attribution { 
     position: absolute;
     bottom: 5px;
@@ -165,37 +187,44 @@ body{
     left: 0;
     right: 0;
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-.no-display{
+
+.no-display {
     display: none;
 }
 
 
-@media only screen and (max-width: 1375px) {
-    .container{
+@media only screen and (max-width: 1000px) {
+    .container {
         height: 200vh;
         min-height: 1750px;
         max-height: 2200px;
     }
-    .box{
+
+    .box {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: flex-start;
         height: 100%;
     }
-    .bg-bottom{
+
+    .bg-bottom {
         display: none;
     }
-    .header{
+
+    .header {
         padding: 6% 0 4%;
     }
-    .price-switch-box{
+
+    .price-switch-box {
         margin: 0.5%;
     }
-    .component, .component:nth-of-type(2){
+
+    .component, .component:nth-of-type(2) {
         margin: 15px 0;
         width: 33%;
         min-width: 340px;
@@ -206,7 +235,8 @@ body{
         padding: 45px 15px;
         transform: none;
     }
-    .component *{
+
+    .component * {
         margin: 3% 0;
     }
 }
