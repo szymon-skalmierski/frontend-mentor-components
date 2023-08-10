@@ -2,6 +2,10 @@
 
 ![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)
 
+# Live Preview
+
+[Expenses Chart Live Preview](https://expenses-chart-fem.vercel.app)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
