@@ -31,7 +31,7 @@ body {
 
 .result {
     display: grid;
-    grid-template-rows: 10% 50% 20% 20%;
+    grid-template-rows: 10% 45% 20% 25%;
     justify-items: center;
     align-items: center;
     color: white;
@@ -92,6 +92,8 @@ body {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+    position: absolute;
+    bottom: 5px;
 }
 
 .attribution a {
