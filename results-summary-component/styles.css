@@ -89,6 +89,22 @@ body {
     justify-content: space-evenly
 }
 
+.points div {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.description, .points-score {
+    flex: 1 1 50%;
+}
+
+.points-score {
+    display: flex;
+    justify-content: flex-end;
+    word-spacing: 0.5rem;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
