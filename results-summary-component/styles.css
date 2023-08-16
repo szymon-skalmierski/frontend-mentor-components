@@ -1,3 +1,11 @@
+@import url('fonts.css');
+
+html {
+    font-family: HankenGrotesk;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -9,7 +17,7 @@ body {
 
 .container {
     width: 50vw;
-    aspect-ratio: 3/2;
+    aspect-ratio: 4/3;
     display: flex;
     border-radius: 30px;
     background-color: hsl(0, 0%, 100%);
@@ -17,13 +25,55 @@ body {
 }
 
 .result, .summary {
-    display: flex;
     flex: 1 1 50%;
 }
 
 .result {
+    display: grid;
+    grid-template-rows: 10% 50% 20% 20%;
+    justify-items: center;
+    align-items: center;
+    color: white;
     border-radius: 30px;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 30px;
+    text-align: center;
+}
+
+.result h2 {
+    color: hsl(241, 100%, 89%);
+}
+
+.great {
+    font-size: 2.5em;
+}
+
+.note {
+    align-self: start;
+    text-align: center;
+    padding: 0 15%;
+    box-sizing: border-box;
+}
+
+.circle {
+    width: 60%;
+    margin: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle .score {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.circle .of {
+    color: hsla(241, 100%, 89%, 0.5);
 }
 
 .attribution {
