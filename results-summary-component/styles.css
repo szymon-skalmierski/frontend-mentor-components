@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 50vw;
+    width: max(50vw, 600px);
     aspect-ratio: 4/3;
     display: flex;
     border-radius: 30px;
@@ -141,4 +141,26 @@ body {
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 0.8rem;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        aspect-ratio: unset;
+    }
+
+    .result {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .circle {
+        width: clamp(150px, 50vw, 200px);
+    }
+    
 }
