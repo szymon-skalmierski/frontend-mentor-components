@@ -26,7 +26,8 @@ body {
 
 .result, .summary {
     flex: 1 1 50%;
-    padding: 30px;
+    padding: 5%;
+    box-sizing: border-box;
 }
 
 .result {
@@ -70,9 +71,11 @@ body {
 }
 
 .note {
+    color: hsl(241, 100%, 89%);
+    font-size: 1.2rem;
     align-self: start;
     text-align: center;
-    padding: 0 15%;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
@@ -86,23 +89,47 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .points div {
     display: flex;
     align-items: center;
     font-weight: 600;
+    padding: 2.5%;
+    border-radius: 15px;
 }
 
 .description, .points-score {
     flex: 1 1 50%;
 }
 
+.description {
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+}
+
+.description img {
+    margin-right: 5%;
+}
+
+.reaction { background-color: hsla(0, 100%, 67%, 0.1) }
+.reaction .description { color: hsl(0, 100%, 67%) }
+
+.memory { background-color: hsla(39, 100%, 56%, 0.1) }
+.memory .description { color: hsl(39, 100%, 56%) }
+
+.verbal { background-color: hsla(166, 100%, 37%, 0.1) }
+.verbal .description { color: hsl(166, 100%, 37%) }
+
+.visual { background-color: hsla(234, 85%, 45%, 0.1) }
+.visual .description { color: hsl(234, 85%, 45%) }
+
 .points-score {
     display: flex;
     justify-content: flex-end;
-    word-spacing: 0.5rem;
+    word-spacing: 0.2rem;
 }
 
 .attribution {
