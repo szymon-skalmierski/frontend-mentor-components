@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-    width: max(50vw, 600px);
-    aspect-ratio: 4/3;
+    width: max(50vw, 700px);
+    aspect-ratio: 6/4;
     display: flex;
     border-radius: 30px;
     background-color: hsl(0, 0%, 100%);
@@ -25,8 +25,7 @@ body {
 }
 
 .result, .summary {
-    flex: 1 1 50%;
-    padding: 5%;
+    flex-basis: 50%;
     box-sizing: border-box;
 }
 
@@ -39,6 +38,7 @@ body {
     border-radius: 30px;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     text-align: center;
+    padding: 5%;
 }
 
 .result h2 {
@@ -75,7 +75,7 @@ body {
     font-size: 1.2rem;
     align-self: start;
     text-align: center;
-    padding: 0 5%;
+    padding: 0 10%;
     box-sizing: border-box;
 }
 
@@ -83,6 +83,7 @@ body {
     display: grid;
     align-items: center;
     grid-template-rows: 10% 75% 15%;
+    padding: 5%;
 }
 
 .summary button {
@@ -93,6 +94,11 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.summary button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    
 }
 
 .summary .points {
@@ -154,7 +160,24 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 0.9rem;
+    }
+    .container {
+        width: max(50%, 300px);
+        flex-direction: column;
+        aspect-ratio: 3/8;
+    }
+
+    .circle {
+        width: clamp(120px, 40vw, 150px);
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
     html {
         font-size: 0.8rem;
     }
