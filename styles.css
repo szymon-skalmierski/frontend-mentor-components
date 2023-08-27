@@ -1,0 +1,44 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('https://images.pexels.com/photos/17483093/pexels-photo-17483093/free-photo-of-sztuka-abstrakcyjny-projekt-kreatywnosc.jpeg?auto=compress');
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 3%;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.nav-container {
+    width: max(300px, 30%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-container a {
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+    padding: max(10px, 2.5%);
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    transition: scale 0.1s;
+    box-shadow: 0 0 25px -5px black;
+}
+
+.nav-container a:hover {
+    scale: 1.05;
+}
