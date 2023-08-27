@@ -4,7 +4,7 @@
 
 ## Live Preview
 
-[Expenses Chart Live Preview](https://expenses-chart-ss.vercel.app)
+[Expenses Chart Live Preview](https://fmc-ss.vercel.app/expenses-chart/)
 
 ## Welcome! 👋
 

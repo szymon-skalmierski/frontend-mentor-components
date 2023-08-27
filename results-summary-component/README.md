@@ -2,6 +2,10 @@
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
+## Live Preview
+
+[Results Summary Component Live Preview](https://fmc-ss.vercel.app/results-summary-component/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.

@@ -4,7 +4,7 @@
 
 ## Live Preview
 
-[Pricing Component Live Preview](https://pricing-ss.vercel.app)
+[Pricing Component Live Preview](https://fmc-ss.vercel.app/pricing-component/)
 
 ## Welcome! 👋
 

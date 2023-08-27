@@ -4,7 +4,7 @@
 
 ## Live Preview
 
-[Age Calculator Live Preview](https://age-calc-ss.vercel.app)
+[Age Calculator Live Preview](https://fmc-ss.vercel.app/age-calculator/)
 
 ## Welcome! 👋
 
