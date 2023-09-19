@@ -11,13 +11,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(225, 100%, 98%);
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 span {
     color: hsl(224, 23%, 55%);
 }
 .container {
+    background-color: white;
     height: 80vh;
     aspect-ratio: 7/11;
     box-shadow: 0 15px 20px hsla(224, 23%, 55%, 0.5);
@@ -100,7 +104,7 @@ span {
 }
 
 .buttons button:hover {
-    background-color: rgb(118, 108, 241);
+    background-color: hsl(245, 83%, 68%);
 }
 
 .buttons a {
