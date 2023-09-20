@@ -20,6 +20,7 @@ body {
 span {
     color: hsl(224, 23%, 55%);
 }
+
 .container {
     background-color: white;
     height: 80vh;
@@ -132,6 +133,10 @@ span {
 @media screen and (max-width: 600px) {
     html {
         font-size: 0.8rem;
+    }
+
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
     }
 
     .container {
