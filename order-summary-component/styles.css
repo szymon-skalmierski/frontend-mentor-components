@@ -142,5 +142,7 @@ span {
     .container {
         max-width: 95%;
         aspect-ratio: 7/10;
+        height: auto;
+        min-height: 500px;
     }
 }
