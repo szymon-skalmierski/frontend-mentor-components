@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
 body {
     height: 100vh;
     display: flex;
@@ -19,10 +21,6 @@ header {
     width: 95%;
     align-self: flex-end;
     position: relative;
-}
-
-main {
-    flex-basis: 80%;
 }
 
 header img {
@@ -66,4 +64,68 @@ li {
 a {
     text-decoration: none;
     color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 1fr 50%;
+    padding: 10%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.left, .right {
+    display: flex;
+    
+}
+
+.left {
+    height: fit-content;
+    flex-basis: 35%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left span {
+    font-size: 1.75rem;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 4.72px;
+    text-transform: uppercase;
+} 
+
+.left h1 {
+    font-weight: lighter;
+    font-family: 'Bellefair', serif;
+    font-size: 10rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.left p {
+    font-family: 'Barlow';
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+}
+
+
+.right {
+    flex-basis: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    aspect-ratio: 1/1;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: 'Bellefair';
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
