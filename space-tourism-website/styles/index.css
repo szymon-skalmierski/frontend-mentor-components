@@ -3,7 +3,7 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(../assets/home/background-home-desktop.jpg);
@@ -62,8 +62,16 @@ li {
 }
 
 a {
+    font-family: 'Barlow Condensed', serif;
     text-decoration: none;
     color: white;
+    letter-spacing: 2.7px;
+    text-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+
+.nav-number {
+    font-weight: bolder;
 }
 
 main {
