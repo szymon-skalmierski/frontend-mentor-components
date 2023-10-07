@@ -1,11 +1,13 @@
+main {
+    padding: 10% 12%;
+}
+
 .left, .right {
     display: flex;
-    
 }
 
 .left {
-    height: fit-content;
-    flex-basis: 35%;
+    flex-basis: 30%;
     flex-direction: column;
     justify-content: center;
 }
@@ -34,6 +36,7 @@
 
 
 .right {
+    flex-grow: 1;
     flex-basis: 50%;
     justify-content: flex-end;
     align-items: flex-end;
@@ -43,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    height: 55%;
     aspect-ratio: 1/1;
     background-color: aliceblue;
     color: black;
