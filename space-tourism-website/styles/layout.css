@@ -58,6 +58,7 @@ li {
     justify-content: center;
     align-items: center;
     padding: 1%;
+    position: relative;
 }
 
 a {
@@ -67,6 +68,26 @@ a {
     letter-spacing: 2.7px;
     text-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
     text-transform: uppercase;
+}
+
+nav .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    height: 3px;
+    left: 0;
+}
+
+nav a:hover:not(.active)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #979797;
+    height: 3px;
+    left: 0;
 }
 
 .nav-number {
