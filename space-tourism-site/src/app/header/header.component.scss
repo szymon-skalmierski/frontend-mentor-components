@@ -7,6 +7,7 @@
     justify-content: space-between;
     width: 95%;
     position: relative;
+    padding: 2% 0 0 0;
 }
 
 img {
@@ -32,8 +33,6 @@ nav ul {
 hr {
     z-index: 1;
     width: 35%;
-    top: 50%;
-    margin: 0;
     left: 25%;
     transform: translateX(-50%);
     border: 1px solid rgba(128, 128, 128, 0.4);
