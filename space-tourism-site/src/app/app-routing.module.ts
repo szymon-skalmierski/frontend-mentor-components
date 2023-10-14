@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'crew',
-    component: CrewComponent,
+    loadChildren: () => import('./crew/crew.module').then(m=>m.CrewModule)
   },
   {
     path: 'technology',
