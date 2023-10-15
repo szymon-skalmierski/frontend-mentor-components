@@ -3,12 +3,12 @@
     padding: 5% 12% 0% 12%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 1;
 }
 
 img {
-    height: 100%;
+    width: 90%;
 }
 
 h2 {
@@ -24,6 +24,12 @@ h2 span {
 
 .content {
     display: flex;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .description ul {
@@ -46,5 +52,7 @@ a {
 }
 
 .person {
+    display: flex;
+    justify-content: flex-end;
     margin: auto;
 }

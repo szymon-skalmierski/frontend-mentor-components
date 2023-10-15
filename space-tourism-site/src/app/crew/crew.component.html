@@ -1,7 +1,9 @@
-<h2>01 <span>PICK YOUR DESTINATION</span></h2>
+<h2>02 <span>MEET YOUR CREW</span></h2>
 <div class="content">
     <div class="description">
-        
+        <span class="role">{{ crewMemberData.role | uppercase }}</span>
+        <span class="name">{{ crewMemberData.name }}</span>
+        <p class="bio">{{ crewMemberData.bio }}</p>
         <ul>
             <li><a href="https://google.com"></a></li>
             <li><a href="#"></a></li>
@@ -10,6 +12,6 @@
         </ul>
     </div>
     <div class="person">
-        <img src="/assets/crew/image-victor-glover.png" alt="person">
+        <img [src]="crewMemberData.images.png" alt="person">
     </div>
 </div>

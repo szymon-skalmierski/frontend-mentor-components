@@ -12,7 +12,7 @@ export class CrewComponent {
   constructor(private route: ActivatedRoute){}
 
   ngOnInit() {
-    this.route.data.subscribe(data=>this.crewMemberData=data);
+    this.route.data.subscribe(data=>{this.crewMemberData=data; console.log(this.crewMemberData)});
   }
 
 }
