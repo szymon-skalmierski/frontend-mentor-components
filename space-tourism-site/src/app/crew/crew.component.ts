@@ -7,12 +7,4 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./crew.component.scss']
 })
 export class CrewComponent {
-  crewMemberData: any;
-
-  constructor(private route: ActivatedRoute){}
-
-  ngOnInit() {
-    this.route.data.subscribe(data=>{this.crewMemberData=data; console.log(this.crewMemberData)});
-  }
-
 }

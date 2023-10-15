@@ -3,17 +3,13 @@
     padding: 5% 12% 0% 12%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex: 1;
-}
-
-img {
-    width: 90%;
 }
 
 h2 {
     color: rgba(255, 255, 255, 0.25);
     letter-spacing: 0.25rem;
+    flex: 1;
 }
 
 h2 span {
@@ -22,37 +18,6 @@ h2 span {
     font-weight: lighter;
 }
 
-.content {
-    display: flex;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.description ul {
-    display: flex;
-    list-style: none;
-    gap: 0.8rem;
-}
-
-.description li {
-    display: flex;
-    width: 15px;
-    height: 15px;
-}
-
-a {
-    background-color: grey;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-}
-
-.person {
-    display: flex;
-    justify-content: flex-end;
-    margin: auto;
+app-crew-member {
+    max-height: 50%;
 }
