@@ -3,6 +3,25 @@
 body {
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 0 0 0;
     color: white;
+}
+
+.crew-background {
+    background-image: url(/assets/crew/background-crew-desktop.jpg);
+}
+
+.technology-background {
+    background-image: url(/assets/technology/background-technology-desktop.jpg);
+}
+
+.destination-background {
+    background-image: url(/assets/destination/background-destination-desktop.jpg);
+}
+
+.home-background {
+    background-image: url(/assets/home/background-home-desktop.jpg);
 }

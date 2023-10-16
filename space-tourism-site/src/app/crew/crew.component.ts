@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-crew',
   templateUrl: './crew.component.html',
   styleUrls: ['./crew.component.scss']
 })
-export class CrewComponent {
+export class CrewComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    document.body.style.backgroundImage = 'url(/assets/crew/background-crew-desktop.jpg)';
+  }
 }
