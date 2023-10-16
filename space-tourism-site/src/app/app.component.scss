@@ -1,9 +1,10 @@
 :host {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 15% 0% 85%;
     height: 100vh;
 }
 
 app-header {
-    align-self: flex-end;
+    align-self: center;
+    justify-self: flex-end;
 }
