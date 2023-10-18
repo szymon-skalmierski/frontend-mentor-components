@@ -1,5 +1,5 @@
 <div class="planet">
-    <img src="/assets/destination/image-mars.png" alt="planet">
+    <img [src]="destinationTargetData.images.png" alt="planet">
 </div>
 <div class="filler"></div>
 <div class="description">
@@ -25,7 +25,7 @@
         <p class="target-desc">{{ destinationTargetData.description }}</p>
         <hr>
     </div>
-    
+
     <div class="target-info">
         <div class="distance">
             <span class="info-header">AVG. DISTANCE</span>
