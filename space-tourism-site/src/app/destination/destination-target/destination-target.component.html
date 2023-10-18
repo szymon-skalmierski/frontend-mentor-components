@@ -23,5 +23,17 @@
     <div class="destination-target">
         <p class="target-name">{{ destinationTargetData.name | uppercase }}</p>
         <p class="target-desc">{{ destinationTargetData.description }}</p>
+        <hr>
+    </div>
+    
+    <div class="target-info">
+        <div class="distance">
+            <span class="info-header">AVG. DISTANCE</span>
+            <span class="info-data">{{ destinationTargetData.distance }}</span>
+        </div>
+        <div class="travel-time">
+            <span class="info-header">EST. TRAVEL TIME</span>
+            <span class="info-data">{{ destinationTargetData.travel }}</span>
+        </div>
     </div>
 </div>

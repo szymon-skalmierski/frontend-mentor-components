@@ -80,6 +80,33 @@ nav a:hover:not(.active)::after {
     color: #D0D6F9;
 }
 
+hr {
+    border-color: #383B4B;
+}
+
+.target-info {
+    display: flex;
+}
+
+.distance, .travel-time {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-header {
+    font-family: 'Barlow Condensed';
+    font-size: 0.875rem;
+    color: #D0D6F9;
+    margin: 5% 0;
+}
+
+.info-data {
+    font-family: 'Bellefair';
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
 img {
     width: 85%;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
