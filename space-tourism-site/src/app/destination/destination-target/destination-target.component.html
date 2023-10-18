@@ -1,8 +1,27 @@
-<div class="content">
-    <div class="planet">
-        <img src="/assets/destination/image-mars.png" alt="">
-    </div>
-    <div class="description">
-
+<div class="planet">
+    <img src="/assets/destination/image-mars.png" alt="planet">
+</div>
+<div class="filler"></div>
+<div class="description">
+    <nav>
+        <ul>
+          <li>
+            <a [routerLink]="'../Moon'" routerLinkActive="active">Moon</a>
+          </li>
+          <li>
+            <a [routerLink]="'../Mars'" routerLinkActive="active">Mars</a>
+          </li>
+          <li>
+            <a [routerLink]="'../Europe'" routerLinkActive="active">Europe</a>
+          </li>
+          <li>
+            <a [routerLink]="'../Titan'" routerLinkActive="active">Titan</a>
+          </li>
+        </ul>
+      </nav>
+    
+    <div class="crew-member">
+        <p class="name">{{ destinationTargetData.name | uppercase }}</p>
+        <p class="bio">{{ destinationTargetData.bio }}</p>
     </div>
 </div>

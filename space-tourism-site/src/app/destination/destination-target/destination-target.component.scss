@@ -1,0 +1,90 @@
+:host {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    gap: 5%;
+    height: 100%;
+}
+
+.description {
+    display: grid;
+    grid-template-rows: 10% 70% 20%;
+}
+
+nav {
+    height: 100%;
+    flex-basis: 50%;
+    padding: 0 5%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 5%;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    position: relative;
+}
+
+a {
+    font-family: 'Barlow Condensed', serif;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+nav .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    left: 0;
+}
+
+nav a:hover:not(.active)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #979797;
+    height: 3px;
+    left: 0;
+}
+
+.nav-number {
+    font-weight: bolder;
+}
+
+.crew-member {
+    align-self: center;
+}
+
+.planet {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.name {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    font-family: 'Bellefair';
+}
+
+img {
+    width: 85%;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
+}

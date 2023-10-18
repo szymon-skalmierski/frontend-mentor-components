@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import * as data from '../../../data.json';
+import * as dataJSON from '../../../data.json';
 import { DestinationComponent } from './destination.component';
 import { DestinationTargetComponent } from './destination-target/destination-target.component';
 
-const crewData = data;
+const data = dataJSON;
 
 const routes: Routes = [
   {
@@ -18,7 +18,23 @@ const routes: Routes = [
       },
       {
         path: 'Moon',
-        component: DestinationTargetComponent
+        component: DestinationTargetComponent,
+        data: data.destinations[0]
+      },
+      {
+        path: 'Mars',
+        component: DestinationTargetComponent,
+        data: data.destinations[1]
+      },
+      {
+        path: 'Europe',
+        component: DestinationTargetComponent,
+        data: data.destinations[2]
+      },
+      {
+        path: 'Titan',
+        component: DestinationTargetComponent,
+        data: data.destinations[3]
       },
     ]
   },
