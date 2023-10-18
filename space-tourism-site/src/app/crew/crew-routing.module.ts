@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrewComponent } from './crew.component';
-import * as data from '../../../data.json';
+import * as dataJSON from '../../../data.json';
 import { CrewMemberComponent } from './crew-member/crew-member.component';
 
-const crewData = data;
+const data = dataJSON;
 
 const routes: Routes = [
   {
@@ -19,22 +19,22 @@ const routes: Routes = [
       {
         path: 'Douglas',
         component: CrewMemberComponent,
-        data: crewData.crew[0]
+        data: data.crew[0]
       },
       {
         path: 'Mark',
         component: CrewMemberComponent,
-        data: crewData.crew[1]
+        data: data.crew[1]
       },
       {
         path: 'Victor',
         component: CrewMemberComponent,
-        data: crewData.crew[2]
+        data: data.crew[2]
       },
       {
         path: 'Anousheh',
         component: CrewMemberComponent,
-        data: crewData.crew[3]
+        data: data.crew[3]
       },
     ]
   },
