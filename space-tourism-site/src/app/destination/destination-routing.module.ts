@@ -27,7 +27,7 @@ const routes: Routes = [
         data: data.destinations[1]
       },
       {
-        path: 'Europe',
+        path: 'Europa',
         component: DestinationTargetComponent,
         data: data.destinations[2]
       },
