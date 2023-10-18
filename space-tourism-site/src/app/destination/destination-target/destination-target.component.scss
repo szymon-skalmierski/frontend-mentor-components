@@ -10,18 +10,11 @@
     grid-template-rows: 10% 70% 20%;
 }
 
-nav {
-    height: 100%;
-    flex-basis: 50%;
-    padding: 0 5%;
-}
-
 nav ul {
     margin: 0;
     padding: 0;
     height: 100%;
     display: flex;
-    justify-content: space-around;
     list-style: none;
     gap: 5%;
 }
@@ -62,11 +55,7 @@ nav a:hover:not(.active)::after {
     left: 0;
 }
 
-.nav-number {
-    font-weight: bolder;
-}
-
-.crew-member {
+.destination-target {
     align-self: center;
 }
 
@@ -78,10 +67,17 @@ nav a:hover:not(.active)::after {
     object-fit: contain;
 }
 
-.name {
-    font-size: 3.5rem;
+.target-name {
+    font-size: 6.25rem;
     margin: 1rem 0;
     font-family: 'Bellefair';
+}
+
+.target-desc {
+    font-size: 1.125rem;
+    font-family: 'Barlow';
+    line-height: 32px;
+    color: #D0D6F9;
 }
 
 img {
