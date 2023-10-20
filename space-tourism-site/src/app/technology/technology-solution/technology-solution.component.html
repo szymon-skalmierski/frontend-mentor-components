@@ -1,13 +1,13 @@
 <nav>
     <ul>
       <li>
-        <a [routerLink]="'home'" routerLinkActive="active">1</a>
+        <a [routerLink]="'../LaunchVehicle'" routerLinkActive="active">1</a>
       </li>
       <li>
-        <a [routerLink]="" routerLinkActive="active">2</a>
+        <a [routerLink]="'../SpaceCapsule'" routerLinkActive="active">2</a>
       </li>
       <li>
-        <a [routerLink]="" routerLinkActive="active">3</a>
+        <a [routerLink]="'../SpacePort'" routerLinkActive="active">3</a>
       </li>
     </ul>
 </nav>
@@ -15,8 +15,8 @@
 <div class="description">
     <div class="technology-solution">
         <span class="role">THE TERMINOLOGY...</span>
-        <p class="name">123</p>
-        <p class="bio">123</p>
+        <p class="name">{{ technologySolutionData.name }}</p>
+        <p class="desc">{{ technologySolutionData.description }}</p>
     </div>
 </div>
 

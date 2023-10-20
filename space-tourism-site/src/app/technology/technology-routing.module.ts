@@ -17,7 +17,7 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
-        path: 'Spaceport',
+        path: 'SpacePort',
         component: TechnologySolutionComponent
       },
       {
