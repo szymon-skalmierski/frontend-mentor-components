@@ -17,16 +17,19 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
+        path: 'LaunchVehicle',
+        component: TechnologySolutionComponent,
+        data: data.technology[0]
+      },
+      {
         path: 'SpacePort',
-        component: TechnologySolutionComponent
+        component: TechnologySolutionComponent,
+        data: data.technology[1]
       },
       {
         path: 'SpaceCapsule',
-        component: TechnologySolutionComponent
-      },
-      {
-        path: 'LaunchVehicle',
-        component: TechnologySolutionComponent
+        component: TechnologySolutionComponent,
+        data: data.technology[2]
       },
     ]
   },
