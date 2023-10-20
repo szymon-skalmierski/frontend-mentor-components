@@ -2,7 +2,7 @@
     display: grid;
     align-items: center;
 
-    grid-template-columns: 20% 40% 40%;
+    grid-template-columns: 20% 40% 5% 35%;
     height: 100%;
 }
 
@@ -56,16 +56,18 @@ a:hover {
     align-self: center;
 }
 
-.planet {
+.portrait {
+    grid-column-start: 4;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     object-fit: contain;
 }
 
 img {
-    width: 85%;
+    justify-self: end;
+    width: 100%;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
 }
 
