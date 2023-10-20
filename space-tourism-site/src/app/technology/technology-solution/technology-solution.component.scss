@@ -1,7 +1,6 @@
 :host {
     display: grid;
     align-items: center;
-
     grid-template-columns: 20% 40% 5% 35%;
     height: 100%;
 }
@@ -15,45 +14,46 @@ nav {
     height: 100%;
     padding: 30% 0;
     box-sizing: border-box;
-}
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    justify-content: space-evenly;
-}
+    ul {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-evenly;
 
-li {
-    display: flex;
-    justify-content: center;
-}
+        li {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Barlow Condensed', serif;
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    height: 75px;
-    width: 75px;
-    border: 1px solid white;
-    border-radius: 50%;
-}
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Barlow Condensed', serif;
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        height: 75px;
+        width: 75px;
+        border: 1px solid white;
+        border-radius: 50%;
 
-a:hover {
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-}
+        &.active {
+            color: black;
+            background-color: white;
+        }
 
-.destination-target {
-    align-self: center;
+        &:hover {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+        }
+    }
 }
 
 .portrait {
@@ -63,35 +63,33 @@ a:hover {
     justify-content: flex-end;
     align-items: center;
     object-fit: contain;
+
+    img {
+        justify-self: end;
+        width: 100%;
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
+    }
 }
 
-img {
-    justify-self: end;
-    width: 100%;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
-}
 
-.active {
-    color: black;
-    background-color: white;
-}
+.technology-solution {
+    span {
+        font-size: 1.25rem;
+        font-family: 'Barlow Condensed';
+        color: #D0D6F9;
+    }
 
-.technology-solution span {
-    font-size: 1.25rem;
-    font-family: 'Barlow Condensed';
-    color: #D0D6F9;
-}
-
-.name {
-    font-size: 3.5rem;
-    margin: 1rem 0;
-    font-family: 'Bellefair';
-}
-
-.desc {
-    max-width: 500px;
-    line-height: 32px;
-    font-size: 1.25rem;
-    font-family: 'Barlow';
-    color: #D0D6F9;
+    .name {
+        font-size: 3.5rem;
+        margin: 1rem 0;
+        font-family: 'Bellefair';
+    }
+    
+    .desc {
+        max-width: 500px;
+        line-height: 32px;
+        font-size: 1.25rem;
+        font-family: 'Barlow';
+        color: #D0D6F9;
+    }
 }
