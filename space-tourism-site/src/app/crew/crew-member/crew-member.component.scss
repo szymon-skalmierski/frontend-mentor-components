@@ -9,28 +9,52 @@
     flex: 1;
 }
 
-.description ul {
-    display: flex;
-    list-style: none;
-    gap: 1.3rem;
-    padding: 0;
-}
+nav {
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1.3rem;
+        padding: 0;
 
-.description li {
-    display: flex;
-    width: 12px;
-    height: 12px;
+        li {
+            display: flex;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    a {
+        background-color: grey;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+
+        &.active {
+            background-color: white;
+        }
+    }
 }
 
 .crew-member {
     align-self: center;
-}
 
-a {
-    background-color: grey;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
+    .role {
+        font-size: 2rem;
+        font-family: 'Bellefair';
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .name {
+        font-size: 3.5rem;
+        margin: 1rem 0;
+        font-family: 'Bellefair';
+    }
+    
+    .bio {
+        max-width: 500px;
+        font-size: 1.25rem;
+        font-family: 'Barlow';
+    }
 }
 
 .person {
@@ -39,30 +63,8 @@ a {
     justify-content: center;
     align-items: flex-end;
     object-fit: contain;
-}
 
-.active {
-    background-color: white;
-}
-
-.role {
-    font-size: 2rem;
-    font-family: 'Bellefair';
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.name {
-    font-size: 3.5rem;
-    margin: 1rem 0;
-    font-family: 'Bellefair';
-}
-
-.bio {
-    max-width: 500px;
-    font-size: 1.25rem;
-    font-family: 'Barlow';
-}
-
-img {
-    width: 85%;
+    img {
+        width: 85%;
+    }
 }

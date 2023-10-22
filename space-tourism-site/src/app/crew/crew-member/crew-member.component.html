@@ -4,12 +4,14 @@
         <p class="name">{{ crewMemberData.name | uppercase }}</p>
         <p class="bio">{{ crewMemberData.bio }}</p>
     </div>
-    <ul>
-        <li><a [routerLink]="'../Douglas'" routerLinkActive="active"></a></li>
-        <li><a [routerLink]="'../Mark'" routerLinkActive="active"></a></li>
-        <li><a [routerLink]="'../Victor'" routerLinkActive="active"></a></li>
-        <li><a [routerLink]="'../Anousheh'" routerLinkActive="active"></a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a [routerLink]="'../Douglas'" routerLinkActive="active"></a></li>
+            <li><a [routerLink]="'../Mark'" routerLinkActive="active"></a></li>
+            <li><a [routerLink]="'../Victor'" routerLinkActive="active"></a></li>
+            <li><a [routerLink]="'../Anousheh'" routerLinkActive="active"></a></li>
+        </ul>
+    </nav>
 </div>
 <div class="person">
     <img [src]="crewMemberData.images.png" alt="person">
