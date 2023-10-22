@@ -8,6 +8,28 @@
 .description {
     display: grid;
     grid-template-rows: 10% 70% 20%;
+
+    .technology-solution {
+        span {
+            font-size: 1.25rem;
+            font-family: 'Barlow Condensed';
+            color: #D0D6F9;
+        }
+    
+        .name {
+            font-size: 3.5rem;
+            margin: 1rem 0;
+            font-family: 'Bellefair';
+        }
+        
+        .desc {
+            max-width: 500px;
+            line-height: 32px;
+            font-size: 1.25rem;
+            font-family: 'Barlow';
+            color: #D0D6F9;
+        }
+    }
 }
 
 nav {
@@ -68,27 +90,5 @@ nav {
         justify-self: end;
         width: 100%;
         filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
-    }
-
-    .technology-solution {
-        span {
-            font-size: 1.25rem;
-            font-family: 'Barlow Condensed';
-            color: #D0D6F9;
-        }
-    
-        .name {
-            font-size: 3.5rem;
-            margin: 1rem 0;
-            font-family: 'Bellefair';
-        }
-        
-        .desc {
-            max-width: 500px;
-            line-height: 32px;
-            font-size: 1.25rem;
-            font-family: 'Barlow';
-            color: #D0D6F9;
-        }
     }
 }
