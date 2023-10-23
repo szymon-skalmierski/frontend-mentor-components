@@ -76,3 +76,14 @@ nav {
         left: 0;
     }
 }
+
+@media screen and (max-width: 750px) {
+    :host {
+        height: 70%;
+        width: 95%;
+    }
+    
+    hr {
+        display: none;
+    }
+}
