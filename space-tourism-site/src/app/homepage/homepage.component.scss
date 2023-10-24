@@ -20,6 +20,7 @@
         font-family: 'Barlow Condensed';
         letter-spacing: 4.72px;
         text-transform: uppercase;
+        color: #D0D6F9;
     } 
 
     h1 {
@@ -35,6 +36,7 @@
         font-size: 1.1rem;
         line-height: 2rem;
         margin-bottom: 0;
+        color: #D0D6F9;
     }
 }
 
@@ -80,11 +82,12 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     :host {
         flex-direction: column;
-        padding: 0 12%;
         font-size: 0.4rem;
+        justify-content: space-around;
+        height: 100%;
     }
 
     .left, .right {
@@ -93,8 +96,25 @@
         text-align: center;
     }
 
-    a {
-        height: auto;
-        width: 55%;
+    .left {
+        width: min-content;
+        
+        span {
+            font-size: 1.1rem;
+            letter-spacing: 3.38px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .right {
+        a {
+            height: auto;
+            width: clamp(180px, 40%, 250px);
+            font-family: 'Bellefair';
+            font-size: 2rem;
+        }
     }
 }
