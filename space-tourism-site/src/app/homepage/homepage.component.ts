@@ -8,6 +8,7 @@ import { AfterViewInit, Component } from '@angular/core';
 export class HomepageComponent implements AfterViewInit {
 
   ngAfterViewInit() {
-    document.body.style.backgroundImage = 'url(/assets/home/background-home-desktop.jpg)';
+    document.body.classList.remove('crew-bg', 'technology-bg', 'home-bg', 'destination-bg');
+    document.body.classList.add('home-bg');
   }
 }
