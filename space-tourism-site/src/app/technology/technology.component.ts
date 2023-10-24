@@ -8,6 +8,7 @@ import { AfterViewInit, Component } from '@angular/core';
 export class TechnologyComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
-    document.body.style.backgroundImage = 'url(/assets/technology/background-technology-desktop.jpg)';
+    document.body.classList.remove('crew-bg', 'technology-bg', 'home-bg', 'destination-bg');
+    document.body.classList.add('technology-bg');
   }
 }
