@@ -7,6 +7,7 @@ import { AfterViewInit, Component } from '@angular/core';
 })
 export class DestinationComponent implements AfterViewInit {
   ngAfterViewInit(): void {
-    document.body.style.backgroundImage = 'url(/assets/destination/background-destination-desktop.jpg)';
+    document.body.classList.remove('crew-bg', 'technology-bg', 'home-bg', 'destination-bg');
+    document.body.classList.add('destination-bg');
   }
 }
