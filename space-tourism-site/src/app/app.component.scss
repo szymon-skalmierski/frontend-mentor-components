@@ -8,3 +8,9 @@ app-header {
     align-self: center;
     justify-self: flex-end;
 }
+
+@media screen and (max-width: 950px) {
+    app-header {
+        align-self: flex-start;
+    }
+}
