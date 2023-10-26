@@ -113,3 +113,38 @@ hr {
         }
     }
 }
+
+
+@media screen and (max-width: 950px) {
+    :host {
+        height: 100%;
+        grid-template-rows: 40% 40%;
+        grid-template-columns: auto;
+    }
+
+    .planet {
+        img {
+            height: 85%;
+            width: auto;
+        }
+    }
+
+    .description {
+        place-items: center;
+        text-align: center;
+        height: min-content;
+    }
+
+    nav {
+        width: 60%;
+
+        ul {
+            justify-content: space-around;
+        }
+    }
+
+    .target-info {
+        width: 80%;
+    }
+    
+}
