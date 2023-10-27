@@ -10,6 +10,11 @@ app-header {
 }
 
 @media screen and (max-width: 950px) {
+    :host {
+        display: grid;
+        grid-template-rows: 10% 0% 90%;
+    }
+
     app-header {
         align-self: flex-start;
     }
