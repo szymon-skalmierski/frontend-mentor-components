@@ -21,7 +21,10 @@ h2 {
 
 @media screen and (max-width: 950px) {
     :host {
-        padding: 0 9%;
+        padding: 5% 9% 0%;
     }
-    
+
+    h2 {
+        font-size: 1.25rem;
+    }
 }
