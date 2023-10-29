@@ -18,3 +18,13 @@ h2 {
         font-weight: lighter;
     }
 }
+
+@media screen and (max-width: 950px) {
+    :host {
+        padding: 5% 0;
+    }
+
+    h2 {
+        padding: 0 5%;
+    }
+}
