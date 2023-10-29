@@ -4,10 +4,10 @@
         <a [routerLink]="'../LaunchVehicle'" routerLinkActive="active">1</a>
       </li>
       <li>
-        <a [routerLink]="'../SpaceCapsule'" routerLinkActive="active">2</a>
+        <a [routerLink]="'../SpacePort'" routerLinkActive="active">2</a>
       </li>
       <li>
-        <a [routerLink]="'../SpacePort'" routerLinkActive="active">3</a>
+        <a [routerLink]="'../SpaceCapsule'" routerLinkActive="active">3</a>
       </li>
     </ul>
 </nav>
@@ -20,6 +20,7 @@
     </div>
 </div>
 
-<div class="portrait">
-    <img [src]="technologySolutionData.images.portrait" alt="planet">
+<div class="image">
+    <img class="portrait" [src]="technologySolutionData.images.portrait" alt="planet">
+    <img class="landscape" [src]="technologySolutionData.images.landscape" alt="planet">
 </div>

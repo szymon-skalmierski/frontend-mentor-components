@@ -48,7 +48,7 @@ nav {
 
         li {
             display: flex;
-           justify-content: center;
+            justify-content: center;
         }
     }
 
@@ -78,7 +78,7 @@ nav {
     }
 }
 
-.portrait {
+.image {
     grid-column-start: 4;
     height: 100%;
     display: flex;
@@ -90,5 +90,76 @@ nav {
         justify-self: end;
         width: 100%;
         filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
+    }
+
+    .landscape {
+        display: none;
+    }
+
+    .portrait {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    :host {
+        grid-template-columns: auto;
+        grid-template-rows: auto 20% 1fr;
+    }
+
+    nav {
+        padding: 0;
+        grid-row-start: 2;
+
+        ul {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+
+        a {
+            font-size: 1.5rem;
+            height: 58px;
+            width: 58px;
+        }
+    }
+
+    .description {
+        grid-row-start: 3;
+        padding: 0 15%;
+        align-self: flex-start;
+    
+        .technology-solution {
+            text-align: center;
+
+            span {
+                font-size: 1rem;
+            }
+        
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .desc {
+                max-width: 100%;
+                line-height: 28px;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .image {
+        grid-row-start: 1;
+        grid-column-start: 1;
+
+        .landscape {
+            display: block;
+        }
+
+        .portrait {
+            display: none;
+        }
     }
 }
