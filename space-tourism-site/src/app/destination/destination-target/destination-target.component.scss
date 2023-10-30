@@ -1,12 +1,14 @@
 :host {
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    grid-template-columns: 40% 30%;
+    flex-grow: 5;
 }
 
 .description {
     display: grid;
-    grid-template-rows: 10% 70% 20%;
+    grid-template-rows: 10% 55% 5% 20%;
+    gap: 3%;
 }
 
 .planet {
@@ -17,7 +19,8 @@
     object-fit: contain;
 
     img {
-        width: 85%;
+        min-height: 80%;
+        height: 0;
         filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
     }
 }
@@ -70,7 +73,7 @@ nav {
 }
 
 .destination-target {
-    align-self: center;
+    // align-self: center;
 
     .target-name {
         font-size: 6.25rem;
@@ -87,6 +90,8 @@ nav {
 }
 
 hr {
+    height: 1px;
+    width: 100%;
     border-color: #383B4B;
 }
 
