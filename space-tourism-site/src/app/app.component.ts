@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
       "/assets/home/background-home-desktop.jpg",
       "/assets/technology/background-technology-desktop.jpg",
       "/assets/destination/background-destination-desktop.jpg",
-      );
+    );
   }
 
   pload(...args: any[]):void {
