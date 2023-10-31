@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isActive = false;
 
+  changeNavState() {
+    this.isActive = !this.isActive;
+  }
 }

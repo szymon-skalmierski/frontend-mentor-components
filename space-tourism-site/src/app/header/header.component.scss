@@ -131,7 +131,7 @@ nav {
     nav {
         display: block;
         flex-basis: 100%;
-        padding: 15% 0;
+        padding: 5% 0;
         box-sizing: border-box;
         background-color: transparent;
         backdrop-filter: blur(0px);
@@ -140,6 +140,10 @@ nav {
             flex-direction: column;
             background-color: rgba(255, 255, 255, 0.01);
             backdrop-filter: blur(15px);
+
+            li {
+                padding: 5% 0 3%;
+            }
         }
     }
     

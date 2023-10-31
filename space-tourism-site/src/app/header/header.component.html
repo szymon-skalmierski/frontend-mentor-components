@@ -1,11 +1,11 @@
 <img src="assets/shared/logo.svg" alt="logo" />
 <hr />
-<div class="nav-menu">
+<div class="nav-menu" (click)="changeNavState()">
   <span></span>
   <span></span>
   <span></span>
 </div>
-<nav>
+<nav *ngIf="isActive">
   <ul>
     <li>
       <a [routerLink]="'home'" routerLinkActive="active"><span>00</span> Home</a>
