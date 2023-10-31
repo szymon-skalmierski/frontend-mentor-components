@@ -167,3 +167,68 @@ hr {
     }
     
 }
+
+@media screen and (max-width: 450px) {
+    :host {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planet {
+        aspect-ratio: 1/1;
+
+        img {
+            min-height: 80%;
+            height: 0;
+            width: auto;
+        }
+    }
+
+    .description {
+        place-items: center;
+        text-align: center;
+        height: min-content;
+    }
+
+    nav {
+        width: 60%;
+        margin: 2rem 0;
+
+        ul {
+            justify-content: space-around;
+
+            li {
+                padding: 5% 0;
+            }
+        }
+    }
+
+    .destination-target {
+        margin-bottom: 1rem;
+
+        .target-name {
+            font-size: 3.5rem;
+        }
+        
+        .target-desc {
+            font-size: 0.9rem;
+            line-height: 25px;
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    .target-info {
+        flex-direction: column;
+
+        .distance, .travel-time {
+            padding: 5% 0;
+        }
+    }
+    
+}
