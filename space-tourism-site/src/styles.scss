@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
@@ -42,4 +42,22 @@ body {
     .home-bg {
         background-image: url(/assets/home/background-home-tablet.jpg);
     }
-}
+} 
+
+@media screen and (max-width: 450px) {
+    .crew-bg {
+        background-image: url(/assets/crew/background-crew-mobile.jpg);
+    }
+    
+    .technology-bg {
+        background-image: url(/assets/technology/background-technology-mobile.jpg);
+    }
+    
+    .destination-bg {
+        background-image: url(/assets/destination/background-destination-mobile.jpg);
+    }
+
+    .home-bg {
+        background-image: url(/assets/home/background-home-mobile.jpg);
+    }
+} 
