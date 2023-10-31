@@ -5,7 +5,7 @@
   <span></span>
   <span></span>
 </div>
-<nav *ngIf="isActive">
+<nav [ngClass]="{'active': isActive}">
   <ul>
     <li>
       <a [routerLink]="'home'" routerLinkActive="active"><span>00</span> Home</a>
