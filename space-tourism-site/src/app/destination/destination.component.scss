@@ -28,10 +28,6 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
-    :host {
-        padding: 3% 12% 0%;
-    }
-
     h2 {
         text-align: center;
         font-size: 1rem;
