@@ -121,24 +121,12 @@
 
 @media screen and (max-width: 450px) {
     :host {
-        flex-direction: column;
-        font-size: 0.4rem;
-        justify-content: space-around;
-        height: 100%;
-    }
-
-    .left, .right {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        gap: 2rem;
     }
 
     .left {
-        width: min-content;
-        
         span {
             font-size: 1rem;
-            letter-spacing: 3.38px;
         }
 
         h1 {
@@ -152,10 +140,8 @@
 
     .right {
         a {
-            height: auto;
-            width: clamp(180px, 50%, 250px);
-            font-family: 'Bellefair';
-            font-size: 2rem;
+            width: 9.5rem;
+            font-size: 1.25rem;
         }
     }
 }
