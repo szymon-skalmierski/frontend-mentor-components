@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isActive = false;
+  @Input() isActive = false;
 
-  changeNavState() {
+  changeNavState(e: Event) {
+    e.stopPropagation();
     this.isActive = !this.isActive;
   }
 }
