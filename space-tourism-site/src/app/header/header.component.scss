@@ -119,12 +119,34 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        position: relative;
 
         span {
             display: block;
             height: 15%;
             width: 100%;
             background-color: #D0D6F9;
+        }
+
+        &:has(+.active) {
+            span {
+                position: absolute;
+                top: 50%;
+                transition: 0.5s;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+            }
         }
     }
 
@@ -148,6 +170,10 @@ nav {
 
         &.active {
             display: block;
+
+            span:nth-child(2){
+                display: none;
+            }
         }
     }
 }
