@@ -3,6 +3,7 @@
     align-items: center;
     grid-template-columns: 20% 40% 5% 35%;
     height: 100%;
+    flex: 1;
 }
 
 .description {
@@ -146,6 +147,49 @@ nav {
                 max-width: 100%;
                 line-height: 28px;
                 font-size: 1rem;
+            }
+        }
+    }
+
+    .image {
+        grid-row-start: 1;
+        grid-column-start: 1;
+
+        .landscape {
+            display: block;
+        }
+
+        .portrait {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        a {
+            font-size: 1rem;
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .description {
+        padding: 0 10%;
+
+        .technology-solution {
+            span {
+                font-size: 0.875rem;
+            }
+        
+            .name {
+                font-size: 1.5rem;
+            }
+            
+            .desc {
+                max-width: 100%;
+                line-height: 25px;
+                font-size: 0.9rem;
             }
         }
     }
