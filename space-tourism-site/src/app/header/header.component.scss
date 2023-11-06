@@ -85,7 +85,6 @@ nav {
 @media screen and (max-width: 950px) {
     :host {
         height: 100%;
-        width: 95%;
     }
     
     hr {
@@ -107,7 +106,6 @@ nav {
 @media screen and (max-width: 450px) {
     :host {
         width: 100%;
-        padding-right: 5%;
         box-sizing: border-box;
         flex-wrap: wrap;
         padding: 5%;
@@ -153,18 +151,26 @@ nav {
     }
 
     nav {
-        display: none;
+        display: flex;
+        flex-direction: column;
         flex-basis: 100%;
         padding: 30% 0 0 0;
         box-sizing: border-box;
         background-color: transparent;
-        backdrop-filter: blur(0px);
+        backdrop-filter: none;
+        position: absolute;
+        overflow: hidden;
+        height: 100vh;
+        width: 0;
+        top: 0;
+        right: 0;
+        transition: 0.1s;
 
         ul {
             height: fit-content;
             flex-direction: column;
             background-color: rgba(255, 255, 255, 0.01);
-            backdrop-filter: blur(0px);
+            backdrop-filter: none;
 
             li {
                 padding: 6% 10%;
@@ -196,13 +202,7 @@ nav {
         }
 
         &.active {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
             width: 75vw;
-            position: absolute;
-            top: 0;
-            right: 0;
             z-index: 1;
             backdrop-filter: blur(16px);
 
