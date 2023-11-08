@@ -60,24 +60,21 @@ nav {
             font-weight: bolder;
         }
 
-        &:hover:not(.active)::after {
+        &.active::after, &:hover:not(.active)::after {
             content: '';
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color: #979797;
             height: 3px;
             left: 0;
         }     
         
         &.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            width: 100%;
             background-color: white;
-            height: 3px;
-            left: 0;
+        }
+        
+        &:hover:not(.active)::after {
+            background-color: #979797;
         }
     }
 }
@@ -186,14 +183,7 @@ nav {
                 display: inline;
             }
 
-            &:hover:not(.active)::after {
-                height: 100%;
-                width: 5px;
-                left: auto;
-                right: 0;
-            } 
-
-            &.active::after {
+            &.active::after, &:hover:not(.active)::after {
                 height: 100%;
                 width: 5px;
                 left: auto;
