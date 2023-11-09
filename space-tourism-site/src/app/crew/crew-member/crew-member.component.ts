@@ -12,6 +12,6 @@ export class CrewMemberComponent implements OnInit {
   constructor(private route: ActivatedRoute){}
 
   ngOnInit() {
-    this.route.data.subscribe(data=>{this.crewMemberData=data; console.log(this.crewMemberData)});
+    this.route.data.subscribe(data => this.crewMemberData=data);
   }
 }

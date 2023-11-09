@@ -12,6 +12,6 @@ export class TechnologySolutionComponent implements OnInit {
   constructor(private route: ActivatedRoute){}
 
   ngOnInit() {
-    this.route.data.subscribe(data=>{this.technologySolutionData=data; console.log(this.technologySolutionData)});
+    this.route.data.subscribe(data => this.technologySolutionData=data);
   }
 }

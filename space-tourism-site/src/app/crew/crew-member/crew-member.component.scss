@@ -37,17 +37,16 @@ nav {
 
 .crew-member {
     align-self: center;
+    font-family: 'Bellefair';
 
     .role {
         font-size: 2rem;
-        font-family: 'Bellefair';
         color: rgba(255, 255, 255, 0.5);
     }
     
     .name {
         font-size: 3.5rem;
         margin: 1rem 0;
-        font-family: 'Bellefair';
     }
     
     .bio {
@@ -109,6 +108,10 @@ nav {
         flex-direction: column-reverse;
     }
 
+    nav {
+        margin: 1rem;
+    }
+
     .crew-member {
         grid-row-start: 2;
         text-align: center;
@@ -126,21 +129,10 @@ nav {
             line-height: 25px;
         }
     }
-
-    nav {
-        margin: 1rem;
-    }
     
     .person {
         width: 100%;
         aspect-ratio: 1/1;
         border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-        
-        img {
-            min-height: 100%;
-            min-width: 0;
-            width: auto;
-            height: 0;
-        }
     }
 }

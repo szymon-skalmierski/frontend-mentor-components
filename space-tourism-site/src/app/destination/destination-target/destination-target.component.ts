@@ -12,6 +12,6 @@ export class DestinationTargetComponent implements OnInit {
   constructor(private route: ActivatedRoute){}
 
   ngOnInit() {
-    this.route.data.subscribe(data=>{this.destinationTargetData=data; console.log(this.destinationTargetData)});
+    this.route.data.subscribe(data => this.destinationTargetData=data);
   }
 }
