@@ -2,6 +2,10 @@
 
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
 
+## Live Preview
+
+[Results Summary Component Live Preview](https://sts-ss.vercel.app/)
+
 ## Welcome! 👋
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. Our challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
