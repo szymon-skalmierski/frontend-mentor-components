@@ -1,3 +1,32 @@
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(62, 191, 255);
+	padding: 0.1% 2%;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	height: 100%;
+}
+
+li {
+	padding: 0.5rem;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
@@ -6,3 +35,4 @@
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
