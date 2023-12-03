@@ -54,6 +54,10 @@ li button:hover {
 	border-radius: 50px;
 }
 
+.banner {
+	background-color: rgb(62, 191, 255);
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
