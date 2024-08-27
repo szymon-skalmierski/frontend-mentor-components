@@ -119,11 +119,11 @@ body {
     place-items: center;
     border-radius: 5px;
     width: 110%;
-    padding: 3px;
+    padding: 0.3rem;
     visibility: hidden;
     aspect-ratio: 2/1;
     background-color: black;
-    font-size: 19px;
+    font-size: 17px;
     color: hsl(33, 100%, 98%);
     user-select: none;
     z-index: 1;
