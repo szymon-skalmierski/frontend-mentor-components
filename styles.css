@@ -1,13 +1,16 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url('https://images.pexels.com/photos/17483093/pexels-photo-17483093/free-photo-of-sztuka-abstrakcyjny-projekt-kreatywnosc.jpeg?auto=compress');
-    background-size: cover;
 }
 
 body {
+    margin: 0;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-image: url('assets/img/background.png');
+    background-size: cover;
+    background-position: 100%;
 }
 
 h1 {
