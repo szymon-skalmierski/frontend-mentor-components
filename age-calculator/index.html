@@ -13,47 +13,49 @@
 <body>
 
   <div class="container">
-    <div class="date-picker">
-      <div>
-        <span>DAY</span>
-        <input type="number" name="day" placeholder="DD">
-        <span class="required-alert">This field is required</span>
-        <span class="invalid-alert">Must be a valid day</span>
-        <span class="invalid-date-alert">Must be a valid date</span>
+    <form onclick="console.log('aaa')">
+      <div class="date-picker">
+        <div>
+          <span>DAY</span>
+          <input type="number" name="day" placeholder="DD">
+          <span class="required-alert">This field is required</span>
+          <span class="invalid-alert">Must be a valid day</span>
+          <span class="invalid-date-alert">Must be a valid date</span>
+        </div>
+        <div>
+          <span>MONTH</span>
+          <input type="number" name="month" placeholder="MM">
+          <span class="required-alert">This field is required</span>
+          <span class="invalid-alert">Must be a valid month</span>
+        </div>
+        <div>
+          <span>YEAR</span>
+          <input type="number" name="year" placeholder="YYYY">
+          <span class="required-alert">This field is required</span>
+          <span class="invalid-alert">Must be in the past</span>
+        </div>
       </div>
-      <div>
-        <span>MONTH</span>
-        <input type="number" name="month" placeholder="MM">
-        <span class="required-alert">This field is required</span>
-        <span class="invalid-alert">Must be a valid month</span>
+      <div class="button-wrap">
+        <hr>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
       </div>
-      <div>
-        <span>YEAR</span>
-        <input type="number" name="year" placeholder="YYYY">
-        <span class="required-alert">This field is required</span>
-        <span class="invalid-alert">Must be in the past</span>
+      <div class="result">
+        <div class="years">
+          <span class="number">--</span>
+          <span class="unit">years</span>
+        </div>
+        <div class="months">
+          <span class="number">--</span>
+          <span class="unit">months</span>
+        </div>
+        <div class="days">
+          <span class="number">--</span>
+          <span class="unit">days</span>
+        </div>
       </div>
-    </div>
-    <div class="button-wrap">
-      <hr>
-      <button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
-      </button>
-    </div>
-    <div class="result">
-      <div class="years">
-        <span class="number">--</span>
-        <span class="unit">years</span>
-      </div>
-      <div class="months">
-        <span class="number">--</span>
-        <span class="unit">months</span>
-      </div>
-      <div class="days">
-        <span class="number">--</span>
-        <span class="unit">days</span>
-      </div>
-    </div>
+    </form>
   </div>
   
   <div class="attribution">

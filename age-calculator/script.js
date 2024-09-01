@@ -1,4 +1,4 @@
-const button = document.querySelector(".button-wrap button");
+const form = document.querySelector("form");
 const birthDay = document.querySelector('input[name="day"]');
 const birthMonth = document.querySelector('input[name="month"]');
 const birthYear = document.querySelector('input[name="year"]');
@@ -22,7 +22,8 @@ function isLeapYear(year) {
     return false;
 }
 
-button.addEventListener("click", () => {
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
     let validDay = true;
     let validMonth = true;
     let validYear = true;
