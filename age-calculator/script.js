@@ -3,8 +3,11 @@ const birthDay = document.querySelector('input[name="day"]');
 const birthMonth = document.querySelector('input[name="month"]');
 const birthYear = document.querySelector('input[name="year"]');
 const dayValue = document.querySelector(".days .number");
+const dayUnit = document.querySelector(".days .unit");
 const monthValue = document.querySelector(".months .number");
+const monthUnit = document.querySelector(".months .unit");
 const yearValue = document.querySelector(".years .number");
+const yearUnit = document.querySelector(".years .unit");
 const wholeDate = document.querySelectorAll('.date-picker *')
 const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
@@ -87,8 +90,11 @@ button.addEventListener("click", () => {
             months += 12;
         }
         dayValue.textContent = days;
+        dayUnit.textContent = days != 1 ? 'days' : 'day';
         monthValue.textContent = months;
+        monthUnit.textContent = months != 1 ? 'months' : 'month';
         yearValue.textContent = years;
+        yearUnit.textContent = years != 1 ? 'years' : 'year';
     } else {
         dayValue.textContent = '--';
         monthValue.textContent = '--';
