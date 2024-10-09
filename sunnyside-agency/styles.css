@@ -131,6 +131,42 @@ li button:hover {
 
 
 
+.quotes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15%;
+	aspect-ratio: 3/2;
+}
+
+.quotes .quotes-list {
+	margin-top: 2%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.quotes .quotes-list div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.quotes .quotes-list img {
+	width: 20%;
+	border-radius: 50%;
+}
+.quotes .quotes-list p {
+	margin: 15% 0;
+}
+
+.quotes .quotes-list h3 {
+	margin-bottom: 0.5rem;
+}
+
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
