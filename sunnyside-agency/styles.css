@@ -83,6 +83,20 @@ li button:hover {
 	left: 50%;
 }
 
+.sentences {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.sentences div {
+}
+
+.sentences div img{
+	width: 100%;
+	height: 100%;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
