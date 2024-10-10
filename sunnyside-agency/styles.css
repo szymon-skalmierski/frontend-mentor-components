@@ -2,6 +2,7 @@
 
 html {
 	font-size: 18px;
+	font-family: 'Barlow', sans-serif;
 }
 
 body {
@@ -16,6 +17,10 @@ header {
 	align-items: center;
 	background-color: rgb(62, 191, 255);
 	padding: 0.1% 2%;
+}
+
+header nav {
+	flex-basis: 33%;
 }
 
 header nav ul {
@@ -38,22 +43,24 @@ header li {
 header li a {
 	color: white;
 	text-decoration: none;
-	font-family: 'Barlow', sans-serif;
 }
 
 header li button {
 	cursor: pointer;
 	box-sizing: border-box;
-	padding: 0.7rem;
-	font-size: 1.2rem;
-	color: white;
+	padding: 1rem 1.5rem;
+	font-size: 1.1rem;
+	font-family: 'Fraunces', serif;;
 	text-decoration: none;
 	background-color: transparent;
 	border: none;
 	transition: 0.2s;
+	background-color: white;
+	border-radius: 50px;
 }
 
 header li button:hover {
+	color: white;
 	background-color: rgba(255, 255, 255, 0.4);
 	border-radius: 50px;
 }
@@ -95,28 +102,54 @@ header li button:hover {
 	grid-template-rows: 1fr 1fr 1fr;
 }
 
+.sentences :not(div:nth-child(n+5)) h2 {
+	text-align: left;
+	font-family: 'Fraunces', serif;
+	color: hsl(212, 27%, 19%);
+}
+
+.sentences :not(div:nth-child(n+5)) p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: hsl(232, 10%, 55%);
+}
+
+.sentences a {
+	font-size: 0.9rem;
+	font-family: 'Fraunces', serif;
+}
+
 .sentences div:nth-child(3n-2) {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	padding: 0 15%;
+	padding: 0 18%;
 	font-size: 1.4rem;
 }
 
-.sentences div:nth-child(n+4) {
+.sentences div:nth-child(n+5) {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0 15%;
+	padding: 0 28%;
 	font-size: 1.4rem;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
+	color: hsl(167, 40%, 24%);
 }
 
-.sentences div:nth-child(n+4) .spacer {
+.sentences div:nth-child(n+5) h2 {
+	font-family: 'Fraunces', serif;
+}
+
+.sentences div:nth-child(n+5) p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.sentences div:nth-child(n+5) .spacer {
 	height: 50%;
 }
 
@@ -142,7 +175,6 @@ header li button:hover {
 	align-items: center;
 	justify-content: center;
 	aspect-ratio: 9/5;
-	font-family: 'Barlow', sans-serif;
 	color: hsl(198, 62%, 26%);
 }
 
@@ -210,7 +242,6 @@ header li button:hover {
 
 footer {
 	color: hsl(167, 40%, 24%);
-	font-family: 'Barlow', sans-serif;
 	background-color: rgb(144, 212, 197);
 	display: flex;
 	flex-direction: column;
